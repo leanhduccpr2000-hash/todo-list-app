@@ -1,5 +1,8 @@
 # Danh sách để lưu các công việc
-tasks = []
+tasks = [] 
+def list_tasks():
+    for i in range (len(tasks)):
+        print(i+1,".",tasks[i])
 def add_task(task_name):
     """Thêm một công việc mới vào danh sách."""
     tasks.append(task_name)
@@ -9,3 +12,6 @@ if __name__ == "__main__":
     print("Chào mừng đến với ứng dụng To-Do List!")
     add_task("Học bài Git và GitHub")
     add_task("Làm bài tập thực hành ở nhà")
+    list_tasks()
+
+
